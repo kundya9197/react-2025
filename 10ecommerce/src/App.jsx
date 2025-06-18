@@ -8,16 +8,19 @@ import DogBreeds from './components/DogBreeds'
 import CustomData from './components/CustomData'
 import NewNavbar from './components/NewNavbar'
 
+
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
      {/* <Navbar/> */}
-     {/* <Slider/> */}
      {/* <DogBreeds/> */}
      {/* <CustomData/> */}
-     <NewNavbar/>
+     {/* <NewNavbar/> */}
+     {/* <Slider/> */}
+     
 
     </>
   )
