@@ -1,1 +1,8 @@
 @import "tailwindcss";
+.cdatimg{
+    margin-left: 43%;
+    /* margin-top: 5%; */
+}
+*{
+    /* border: 1px solid red; */
+}

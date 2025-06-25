@@ -100,17 +100,17 @@ function Slider() {
     const [isAutoPlay, setIsAutoPlay] = useState(true);
 
     // Auto-slide functionality
-    useEffect(() => {
-        if (!isAutoPlay) return;
+    // useEffect(() => {
+    //     if (!isAutoPlay) return;
 
-        const interval = setInterval(() => {
-            setCurrentIndex(prevIndex =>
-                prevIndex === images.length - 1 ? 0 : prevIndex + 1
-            );
-        }, 3000); // Change slide every 3 seconds
+    //     const interval = setInterval(() => {
+    //         setCurrentIndex(prevIndex =>
+    //             prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    //         );
+    //     }, 3000); // Change slide every 3 seconds
 
-        return () => clearInterval(interval); // Cleanup interval
-    }, [isAutoPlay, images.length]);
+    //     return () => clearInterval(interval); // Cleanup interval
+    // }, [isAutoPlay, images.length]);
 
     const handleIncrement = () => {
         if (currentIndex === images.length - 1) {
@@ -136,7 +136,7 @@ function Slider() {
                     alt={images[currentIndex].title}
                     className="w-70% h-70% object-cover rounded-lg shadow-lg"
                 />
-                <div className='flex flex-row gap-1 absolute ml-30 mt-3 md:ml-68 md:mt-3 '>
+                {/* <div className='flex flex-row gap-1 absolute ml-30 mt-3 md:ml-68 md:mt-3 '>
                     {images.map((item, i) => {
                         return (
 
@@ -145,7 +145,7 @@ function Slider() {
                             </div>
                         )
                     })}
-                </div>
+                </div> */}
             </div>
             <div className="flex gap-4 mb-2 mt-8">
                 <button
@@ -154,13 +154,13 @@ function Slider() {
                 >
                     Previous
                 </button>
-                <button
+                {/* <button
                     onClick={() => setIsAutoPlay(!isAutoPlay)}
                     className={`px-4 py-2 text-white rounded transition-colors ${isAutoPlay ? 'bg-red-500 hover:bg-red-600' : 'bg-green-500 hover:bg-green-600'
                         }`}
                 >
                     {isAutoPlay ? 'Pause' : 'Play'}
-                </button>
+                </button> */}
                 <button
                     onClick={handleIncrement}
                     className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
@@ -168,9 +168,9 @@ function Slider() {
                     Next
                 </button>
             </div>
-            <div className="mt-2 text-gray-600">
+            {/* <div className="mt-2 text-gray-600">
                 {currentIndex + 1} of {images.length}
-            </div>
+            </div> */}
         </div>
     )
 }

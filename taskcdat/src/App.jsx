@@ -3,15 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import CDATDashboard from './Components/CDATDashboard'
-// import AttendanceChart from './Components/AttendanceChart'
+import Carousel from './Components/Carousel'
+import AttendanceChart from './Components/AttendanceChart'
+import Dashboard from './Components/Dashboard';
 
 
 function App() {
 
   return (
     <>
-   <CDATDashboard/>
+   {/* <CDATDashboard/> */}
    {/* <AttendanceChart/> */}
+   {/* <Carousel/> */}
+   <Dashboard/>
     </>
   )
 }

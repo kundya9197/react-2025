@@ -7,6 +7,7 @@ import Slider from './components/Slider'
 import DogBreeds from './components/DogBreeds'
 import CustomData from './components/CustomData'
 import NewNavbar from './components/NewNavbar'
+import Loginpage from './components/Loginpage'
 
 
 
@@ -19,7 +20,8 @@ function App() {
      {/* <DogBreeds/> */}
      {/* <CustomData/> */}
      {/* <NewNavbar/> */}
-     {/* <Slider/> */}
+     <Slider/>
+     {/* <Loginpage/> */}
      
 
     </>
